@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>按钮</title>
+</head>
+<body>
+	<p>HTML中，按钮分为三种</p>
+	<ul>
+		<li>普通按钮</li>
+		<p>普通按钮默认没有提交功能，它只是一个可点击的小装置，一般情况下，需要配合 JavaScript 脚本才能实现具体的功能。在 HTML 中，把 input标签的 type 属性设置为 button 用来表示普通按钮</p>
+		<form action="http://vip.biancheng.net/login.php" method="post">
+			<input type="button" name="putong" value="普通按钮test">
+		</form>
+		<li>提交按钮</li>
+		<p>提交按钮可以看成是一种具有特殊功能的普通按钮。当单击提交按钮时，会对表单的内容进行提交。在 HTML 中，当input 标签的 type 属性值为 submit 时，用来表示提交按钮。</p>
+		<form>
+			<input type="submit" name="submit" >
+		</form>
+		<li>重置按钮</li>
+		<p>重置按钮也可以看成是一种具有特殊功能的普通按钮，单击重置按钮可以清除用户在表单中输入的信息。把 input 标签的 type 属性设置为 reset 用来表示重置按钮。重置按钮也有默认值，默认值为重置</p>
+		<form action="http://vip.biancheng.net/login.php" method="post">
+			用户名：<input type="text" name="username" value="用户名默认值">
+			密码：<input type="password" name="psd" value="111">
+			<input type="reset">
+		</form>
+	</ul>
+</body>
+</html>
