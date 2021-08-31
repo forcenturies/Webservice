@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>密码</title>
+</head>
+<body>
+	<h6><i>把 input标签的 type 属性设置为 password 可以表示密码框,密码框输入的字符不可见，会被▪代替</i></h6>
+	<form action="http://vip.biancheng.net/login.php" method="post" name="myForm">
+       密码:<input type="password" name="psd">
+	</form>
+	<h5>密码框同单行文本框一样，也有 maxlength、 value 以及 size 等属性</h5>
+	<h6><i>设置maxlength为6</i></h6>
+	<form action="http://vip.biancheng.net/login.php" method="post" name="myForm">
+		密码:<input type="password" name="psd" maxlength="6">
+	</form>
+	<h6><i>用value设置默认密码</i></h6>
+	<form action="http://vip.biancheng.net/login.php" method="post" name="myForm">
+       密码:<input type="password" name="psd" value="123456">
+	</form>
+	<h6><i>size属性一般不使用</i></h6>
+</body>
+</html>

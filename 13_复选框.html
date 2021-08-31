@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>复选框</title>
+</head>
+<body>
+	<h6><i> 把 input 标签中的 type 属性设置为 checkbox 可以实现多选框的效果,和前面单选一样,可以搭配checked value id使用</i></h6>
+	<h6><i>checked预选</i></h6>
+	<form action="http://vip.biancheng.net/register.php" method="post" name="formName">
+     爱好：<input type="checkbox" name="running" checked>跑步
+     		<input type="checkbox" name="reading" checked>阅读
+     		<input type="checkbox" name="shopping" checked>购物
+	</form>
+	<h6><i>name设置属性值,单选radio的时候相同name只能选择一个,但是使用checkbox的时候仍然可以选择,但是不建议这么使用,后台会混淆</i></h6>
+	<form action="http://vip.biancheng.net/register.php" method="post" name="formName">
+     爱好：<input type="checkbox" name="running" id="run" checked>跑步
+     		<input type="checkbox" name="running" id="read" checked>阅读
+     		<input type="checkbox" name="running" id="shop" checked>购物
+	</form>
+	<h6><i>加上value,提交表单就不容易混淆了</i></h6>
+	<form action="http://vip.biancheng.net/register.php" method="post" name="formName">
+     爱好：<input type="checkbox" name="running" checked value="run">
+    	  <input type="checkbox" name="reading" checked value="read">
+     	  <input type="checkbox" name="shopping" checked value="shop">
+	</form>
+	<h6><i>id和单选框使用方法一样,label 标签中的 for 属性指向复选框的 id 属性，类似绑定</i></h6>
+	<form action="http://vip.biancheng.net/register.php" method="post" name="formName">
+     	爱好：<input type="checkbox" name="running" id="run" checked value="run"><label for="run">跑步</label>
+     		<input type="checkbox" name="reading" id="read" checked value="read"><label for="read">阅读</label>
+     		<input type="checkbox" name="shopping" id="shop" checked value="shop"><label for="shop">购物</label>
+	</form>
+</body>
+</html>

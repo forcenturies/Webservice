@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h6><i> 把 input 标签的 type 属性设置为 file 就可以实现上传文件的功能，又叫做文件上传域</i></h6>
+	<form action="http://vip.biancheng.net/register.php" method="post" enctype="multipart/form-data">
+    	 <input type="file" name="file" accept="image/png"/><br/>
+    	 <input type="submit"/>
+	</form>
+	<h6><i>enctype 属性规定被提交数据的编码。如果提交数据中包含文件时，需要把 form 标签的 enctype 属性设置为 multipart/form-data。如果不这样设置，文件将无法正常提交</i></h6>
+</body>
+</html>
