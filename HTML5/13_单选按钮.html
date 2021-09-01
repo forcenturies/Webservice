@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>单选按钮</title>
+</head>
+<body>
+	<h6><i>把 input 标签的 type 属性设置为 radio 可以表示单选按钮,其他属性可以配合使用如checked value id</i>
+		<i>checked可以用来规定页面加载预选的input元素,checked="checked"可以简写为 checked</i>
+	</h6>
+	<form action="http://vip.biancheng.net/login.php" method="post" name="formName">
+       性别：<input type="radio" name="girl" checked="checked">女
+       		 <input type="radio" name="boy" >男
+	</form>
+	<form action="http://vip.biancheng.net/login.php" method="post" name="formName">
+       性别：<input type="radio" name="girl" checked>女
+       		 <input type="radio" name="boy" >男
+	</form>
+	<h6><i>指定name属性,相同name只能单选</i></h6>
+	<form action="http://vip.biancheng.net/login.php" method="post" name="formName">
+       性别：<input type="radio" name="sex" checked>女
+       		 <input type="radio" name="sex" checked>男
+	</form>
+	<h6><i>指定value属性,value值不会显示,但是提交表单是服务器会根据value辨别提交的是哪一项</i></h6>
+	<form action="http://vip.biancheng.net/login.php" method="post" name="formName">
+       性别：<input type="radio" name="sex" value="girl">女
+       		<input type="radio" name="sex" value="boy" checked="checked">男
+	</form>
+	<h6>
+		<i>id属性一般配合label标签/JavaScript/CSS使用</br>
+			label 标签用来为 input 元素定义标记，当 label 标签中的 for 属性与 input元素的 id 属性绑定时，点击 label 标签中的内容，也相当于点击了 input 中的元素
+		</i></h6>
+	<form action="http://vip.biancheng.net/login.php" method="post" name="formName">
+        性别：<input type="radio" name="girl" value="girl" id="girl"><label for="girl">女</label>
+        	  <input type="radio" name="girl" value="boy" id="boy" checked="checked"><label for="boy">男</label>
+	</form>
+</body>
+</html>

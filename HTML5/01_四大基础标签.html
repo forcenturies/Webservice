@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>标签</title>
+</head>
+<body>
+	<!-- HTML标题是<h1>-<h6>等来定义的 -->
+	<h1> 一级标题 </h1>
+	<h1> 二级标题 </h1>
+	<h1> 3级标题 </h1>
+	<h1> 4级标题 </h1>
+	<h1> 5级标题 </h1>
+	<h1> 6级标题 </h1>
+	<!-- HTML 段落是通过 <p> 标签进行定义的 -->
+	<p>	这是一个段落 </p>		
+	<p>	这是另一个段落 </p>
+	<!--img标签的属性包括:
+	src(来源)，可以使用url或者本地地址
+	alt表示图片加载失败时显示的内容
+	title表示鼠标移动到图片上时显示的文字
+	width、height顾名思义设置图片的高度和宽度，默认单位像素px
+	-->
+	<img src="F:\test\test.png" 
+		 width="258" 
+		 height="39"
+		 title="测试本地绝对路径" 
+		 />
+	<img src="./test.png" 
+		 width="500" 
+		 height="100" 
+		 title="测试本地相对路径"
+		 alt="图片加载时" 
+		 />
+	<img src="http://c.biancheng.net/cpp/templets/new/images/logo.jpg?v=3.994" 
+		 width="500" 
+		 height="100" 
+		 title="测试URL路径" 
+		 />
+		<!--a表示超链接，属性包括
+			href指定链接位置，和前面src用法差不多，不仅仅可以指向图片，可以指向任何文件
+			target可以改变目标窗口的打开方式
+		-->
+	<p>
+		<a href="https://www.baidu.com/" target="_blank">百度（新窗口打开）</a>
+		<a href="https://www.baidu.com/" target="_self">百度（现有窗口打开）</a>
+		<!-- _parent在当前框架的上一层打开新页面。
+			 _top在顶层框架中打开新页面,等后面可以研究
+			-->
+		</p>
+</body>
+</html>

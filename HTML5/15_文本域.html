@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>多行文本框</title>
+</head>
+<body>
+	<h6><i>textarea标签来表示多行文本框，又叫做文本域。与其它 input 标签不同，textarea 标签是单闭合标签，它包含起始标签和结束标签，文本内容需要写在两个标签中间</i></h6>
+	<form action="http://vip.biancheng.net/register.php" method="post">
+		多行文本框：<textarea>
+			文本框里面的描述信息
+		</textarea>
+	</form>
+	<h6><i>隐藏收缩按钮</i></h6>
+	<form action="http://vip.biancheng.net/register.php" method="post">
+		多行文本框：<textarea name="desc" style="resize: none;">
+			resize为none隐藏收缩按钮
+		</textarea>
+	</form>
+	<h6><i>所有表单元素相同，文本域要想正确提交，也必须设置 name 属性。除了 name 属性以外，文本域还有其它属性</i></h6>
+	<table border="1">
+		<caption>文本域其他属性</caption>
+		<tr>
+			<th>其他属性</th>
+			<th>说明</th>
+		</tr>
+		<tr>
+			<td>cols</td>
+			<td>用来指定每行显示的字符数</td>
+		</tr>
+		<tr>
+			<td>rows</td>
+			<td>用来指定正常情况下（没有滚动条）显示的文本行数</td>
+		</tr>
+		<tr>
+			<td>id</td>
+			<td>用来定义文本域的唯一 id 属性</td>
+		</tr>
+	</table>
+</body>
+</html>

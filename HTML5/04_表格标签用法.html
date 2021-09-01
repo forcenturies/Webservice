@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>表格</title>
+</head>
+<body>
+	<h1>一、table标签定义表格</h1>
+	<i>HTML表格由table标签以及一个或多个tr、th或td标签组成,属性包括border设置边框、style边框样式</i>
+	<table border="1">
+    <!--border 属性来设置表格的边框宽度，单位是像素px-->
+    <caption>这是表格的标题，一个表格只能有一个标题</caption>
+    <!--一个表格只能有一个标题，也就是说 <table> 标签中只能有一个 <caption> 标签-->
+   <tr><!--table row表格的行，表格中有几个tr就有几行-->
+     <th>表头1</th><!--table heading表头-->
+     <th>表头2</th>
+     <th>表头333</th>
+   </tr>
+   <tr>
+     <td>单元格数据1</td>
+     <!--table datacell表格的单元格，存放表格数据，可以放文本、图片、列表、段落、表单等等等等-->
+     <td>http://c.biancheng.net/</td>
+     <td>教育</td>
+   </tr>
+    <tr>
+     <td rowapan="2">百度</td>
+     <!--rowspan合并列单元格用法：<td rowspan="n">单元格内容</td>-->
+     <td>http://www.baidu.com/</td>
+     <td>搜索</td>
+     </tr>
+   <tr>
+     <td colspan="2">http://www.dangdang.com/</td>
+      <td>图书</td>
+    </tr>
+    <table border="1" style="border-collapse: collapse;">
+      <caption>成功合并单元格</caption>
+    <tr>
+       <th>名称</th>
+     <th>官网</th>
+     <th>性质</th>
+    </tr>
+    <tr>
+      <td>C语言中文网</td>
+     <td>http://c.biancheng.net/</td>
+     <td>教育</td>
+    </tr>
+    <tr>
+      <td rowspan="2">百度</td>
+      <td>http://www.baidu.com/</td>
+      <td>搜索</td>
+    </tr>
+    <tr>
+      <td colspan="2">http://www.dangdang.com/</td>
+    </tr>
+    <i>即使一个单元格中没有任何内容，我们仍需使用 td 或 th元素来表示一个空单元格的存在，建议在 td>或 th 中加入 &nbsp;（空格），否则低版本的 IE 可能无法显示出这个单元格的边框</i>
+</table>
+</table>
+</body>
+</html>
